@@ -1,0 +1,62 @@
+@import "colors.css";
+
+* {
+    border: none;
+    font-size: 15px;
+    font-family: "JetBrainsMono Nerd Font,JetBrainsMono NF";
+    min-height: 25px;
+}
+
+window#waybar{
+    background: transparent;
+    margin: 5px;
+}
+
+#custom-applauncher{
+    padding: 0 10px;
+    font-size: 20px;
+    color: @primary;
+}
+
+.modules-left{
+    border-radius: 0px 15px 15px 0px;
+    margin-top: 2px;
+    background: @surface-alpha;
+}
+
+.modules-center{
+    padding: 0 15px;
+    margin-top: 2px;
+    border-radius: 15px 15px 15px 15px;
+    color: white;
+    background: @surface-alpha;
+}
+
+.modules-right{
+    padding-left: 10px;
+    color: @primary;
+    border-radius: 15px 0px 0px 15px;
+    margin-top: 2px;
+    background: @surface-alpha;
+}
+
+#workspaces button{
+    color: @primary;
+}
+
+#workspaces button.active{
+    color: @primary;
+}
+
+#workspaces button.urgent {
+    color: @on_error;
+}
+
+
+#wireplumber,
+#network,
+#bluetooth,
+#custom-notification,
+#clock{
+    padding: 0 12px;
+}

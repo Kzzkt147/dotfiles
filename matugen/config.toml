@@ -1,0 +1,33 @@
+[config]
+
+[templates.hyprland]
+input_path = '/home/kzzkt/.config/matugen/templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+
+[templates.btop]
+input_path = '/home/kzzkt/.config/matugen/templates/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
+post_hook = 'pkill -USR2 btop || true'
+
+[templates.kitty]
+input_path = '/home/kzzkt/.config/matugen/templates/kitty-colors.conf'
+output_path = '~/.config/kitty/themes/Matugen.conf'
+post_hook = "kitty +kitten themes --reload-in=all Matugen"
+
+[templates.rofi]
+input_path = '/home/kzzkt/.config/matugen/templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'
+
+[templates.vesktop]
+input_path = '/home/kzzkt/.config/matugen/templates/midnight-discord.css'
+output_path = '~/.config/vesktop/themes/midnight-discord.css'
+
+[templates.waybar]
+input_path = '/home/kzzkt/.config/matugen/templates/waybar.conf'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.spotify]
+input_path = '/home/kzzkt/.config/matugen/templates/spicetify.ini'
+output_path = '~/.config/spicetify/Themes/Sleek/color.ini'
+post_hook = 'spicetify watch -s 2>&1 | sed "/Reloaded Spotify/q"'

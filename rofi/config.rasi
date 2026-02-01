@@ -1,0 +1,5 @@
+@import "colors.rasi"
+
+//@theme "/usr/share/rofi/themes/arthur.rasi"
+
+@theme "/usr/share/rofi/themes/material.rasi"
